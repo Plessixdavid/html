@@ -1,0 +1,241 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+main {
+    box-shadow: 30px 0px 40px rgb(196, 196, 196), -30px 0px 40px rgb(196, 196, 196);
+    margin: auto;
+    max-width: 900px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+:root{
+    --clr: purple;
+
+} 
+.menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    background: var(--clr);
+}
+.navigation{
+    width: 900px;
+    height: 70px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.navigation ul{
+    display: flex;
+    width: 350px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 70px;
+    
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color:var(--clr)
+}
+.navigation ul li.active a .icon{
+    transform: translateY(-32px);
+}
+.navigation ul li a .text{
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    left: 20px;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(40px); 
+}
+.navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(10px)
+}
+.indicator{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #29fd53;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 00.5s;
+
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22.5px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22.5px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 var(--clr);
+}
+.navigation ul li:nth-child(1).active ~ .indicator{
+    transform:translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator{
+    transform:translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator{
+    transform:translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator{
+    transform:translateX(calc(70px * 3));
+}
+.srkl {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    background-color: white; 
+    width: 100%;
+}
+header {
+    height: 160px;
+    padding-top: 10px;
+    color: white;
+    background-color: purple;
+}
+
+.photo {
+    margin-left: 7%;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+}
+.des{
+    margin-left: 25%;
+    margin-top: -10%;
+}   
+h3{
+    color: #13c3ba;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    font-size: 20px;
+}
+.post{
+    color: orange;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+.right{
+    padding: 0;
+    margin: 5px;
+    margin-top: -10%;
+}
+.right p{
+   margin-left: 600px;
+   letter-spacing: .1rem;    
+}
+.info{
+    width: 20px;
+    height: 20px;
+}
+.section-left{
+    background-color: white;
+    float: left;
+    width: 400px;
+}
+.section-right{
+    background-color: white;
+    float: right;
+    width: 400px;
+}
+ h4{
+    margin-left: 10%;
+    color: #13c3ba;
+    letter-spacing: .1rem;
+    font-size: 18px;
+}
+hr.light{
+ border-top: 2px solid #13c3ba;
+ width: 90%;
+ margin-top: .8rem;
+ margin-bottom: 1rem;
+}
+.atouts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10%;
+}
+.div{
+    margin-left: 10%;
+}
+
+.skls {
+    padding: 0px;
+    width: 40%;
+    margin-left: 10%
+}
+.cool {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    width: 300px;
+    height: 7px;
+}
+
+.po {
+    margin-top: 20px;
+}
+strong{
+    color: #13c3ba;
+    text-decoration: none; 
+}
+.inner {
+    height: 100%;
+    background-color:  plum;
+}
+.interet{
+    margin-left: 10%;
+}
+span{
+    margin-left: 10px;
+}

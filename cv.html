@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Realisation de CV</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <main>
+        <section class="menu">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="index.html">
+                            <spanb class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </spanb>
+                            <spanb class="text">Home</spanb>
+        
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="cv.html">
+                            <spanb class="icon">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </spanB>
+                            <spanb class="text">CV</spanb>
+        
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="https://github.com/Plessixdavid?tab=repositories" target="_blank">
+                            <spanb class="icon">
+                                <ion-icon name="globe-outline"></ion-icon>
+                            </spanB>
+                            <spanb class="text">Projet</spanb>
+        
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <spanb class="icon">
+                                <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                            </spanb>
+                            <spanb class="text">Contact</spanb>
+        
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+            <script>
+                const list = document.querySelectorAll('.list');
+                function activeLink(){
+                    list.forEach((item) =>
+                    item.classList.remove('active'));
+                    this.classList.add('active');
+                }
+                list.forEach((item) =>
+                item.addEventListener('click',activeLink));
+            </script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        </section>
+       <header>
+                <div class="photo">
+                    <img src="01.png" width="100%" height="100%" alt="">
+                </div>
+              <div class="des">
+                    <h3>Plessix David</h3>
+                    <p class="post">Développeur Web & Mobile</p>
+                </div>
+                <div class="right">
+                        <p><img src="mail.png" class="info"> plessixdavid@hotmail.fr</p>
+                        <p><img src="maps.png" class="info"> Alençon</p>
+                        <p><img src="tele.png" class="info"> 0641324994</p>
+                </div> 
+       </header>
+
+<section class="section-left">
+    <br>
+    <h4>Atouts</h4>
+    <hr class="light">
+     <div class="atouts">
+         <div>Travail d'équipe</div>
+         <div>Projet "Home", Dev d'un projet sous pygame et programmation en POO avec BDD.</div>
+         <div>Adaptabilité/flexibilité/créativité</div>
+         <div>« La logique vous conduira d’un point A à un point B. L’imagination et l’audace vous conduiront où vous le désirez. »- Albert Einstein</div>
+     </div>
+    <br>
+     <h4>Diplômes et Formations</h4>
+    <hr class="light">
+       <div class="div">
+           <div>
+               <b>Certificat en développement web et d'application
+           mobile </b><strong>Via Formation</strong>  Alençon, Orne <br>En cours
+           </div>
+           <br>
+           <div><b>Certificat de Chef de projet en démarches inovantes Spécialisation Web. </b><strong>Startech61 School</strong>  Alençon <br>2017
+           </div>
+       </div>
+       <br>
+    <h4>Expériences professionnelles</h4>
+     <hr class="light">
+     
+        <div class="div">
+          <p><b>Créateur de contenu Web</b> <strong>Alençon</strong><br>
+            Jui. 2017 – Aujourd’hui<br>
+          </p>
+          <ul>
+              <li>Création de contenu vidéo et écrit.</li>
+              <li>Mise en place de concours.</li>
+              <li>Mise en place de partenariats : France 4 Télévision, JDG-BOX.com et Geekmemore.com.</li>
+          </ul>
+        <br>
+          <p><b>Stagiare Webmaster</b> <strong>Alençon</strong><br>
+            Oct. 2017 – Dec. 2017<br>
+         </p>
+         <ul>
+            <li>Stage Chef de projet en innovation.</li>
+            <li>Mise en place d'un projet Application Web (Html5).</li>
+            <li>Créations des supports graphique.</li>
+        </ul>
+        <br>
+          <p><b>Community Manager</b> <strong>CD61, Alençon</strong><br>
+            mars. 2017 – Oct. 2017<br>
+          </p>
+          <ul>
+            <li>Photos, vidéos, graphismes. </li>
+            <li>Planning de validation, calendrier rédactionnel, brief créatif et technique.</li>
+        </ul>
+        </div>
+</section>
+<br>
+<section class="section-right">
+    <h4>Competences</h4>
+    <hr class="light">
+      <div class="skls">
+
+                <div class="po">
+                    <p>Python</p>
+                    <div class="cool">
+                        <div style="width: 70%" class="inner"></div>
+                    </div>
+                </div>
+
+                <div class="po">
+                    <p>html, css</p>
+                    <div class="cool">
+                        <div style="width: 45%" class="inner"></div>
+                    </div>
+                </div>
+
+                <div class="po">
+                    <p> Maya, 3ds Max</p>
+                    <div class="cool">
+                        <div style="width:75%" class="inner"> </div>
+                    </div>
+                </div>
+
+                <div class="po">
+                    <p>Suite Adobe</p>
+                    <div class="cool">
+                        <div style="width:60%" class="inner"> </div>
+                    </div>
+                </div>
+            </div>
+
+    <br>
+     <h4>Langues</h4>
+     <hr class="light">
+     <div class="skls">
+         <div class="po">
+                    <p>Français</p>
+                    <div class="cool">
+                        <div style="width:75%" class="inner"> </div>
+                    </div>
+                </div>
+                <div class="po">
+                    <p>Anglais</p>
+                    <div class="cool">
+                        <div style="width:60%" class="inner"> </div>
+                    </div>
+                </div>
+                <div class="po">
+                    <p>Japonais</p>
+                    <div class="cool">
+                        <div style="width:25%" class="inner"> </div>
+                    </div>
+                </div>
+      </div>
+      <br>
+     <h4>Réseaux sociaux</h4>
+     <hr class="light">
+     <div class="interet">
+      <p><img src="f.png" class="info"><span></span></p> 
+      <p><img src="l.png" class="info"><span></span></p>
+      <p><img src="g.png" class="info"><span></span></p>
+      <p><img src="t.png" class="info"><span></span></p> 
+     </div>
+
+    <br>
+    <h4>Centres d'intérêt</h4>
+     <hr class="light">
+     <div class="interet">
+          <div><b>Japon</b></div>
+          <div><b>Naviguer sur Internet</b></div>
+          <div><b>Musique</b></div>
+          <div><b>Voyage</b></div>
+     </div>
+</section>
+
+
+        <div class="srkl">
+
+        </div>
+     <hr class="light">
+    </main>
+</body>
+
+</html>
